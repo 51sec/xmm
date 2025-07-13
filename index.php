@@ -550,7 +550,7 @@ window.onload=players();
     />
   </a>
   <a
-    href="http://xjj.itprosec.com"
+    href="http://xmm.itprosec.com"
     style="margin-left: 1em; margin-right: 1em;"     target="_blank"
   >
     <img alt="JJ" 
@@ -558,7 +558,7 @@ window.onload=players();
       data-original-height="500"
       data-original-width="500"
       height="50"
-      src="https://i.51sec.org/2025/jj.png"
+      src="https://i.51sec.org/2025/xmm.png"
       width="50"
     />
   </a>
