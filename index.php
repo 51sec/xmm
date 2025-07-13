@@ -553,7 +553,7 @@ window.onload=players();
     href="http://xmm.itprosec.com"
     style="margin-left: 1em; margin-right: 1em;"     target="_blank"
   >
-    <img alt="JJ" 
+    <img alt="XMM" 
       border="0"
       data-original-height="500"
       data-original-width="500"
