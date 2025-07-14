@@ -181,7 +181,7 @@ body {background:#000;}
   </head>
 
 
-  <body background-color:#fff>
+<body background-color:#fff>
 
 <amp-auto-ads type="adsense"
         data-ad-client="ca-pub-5660349373091698">
@@ -477,7 +477,7 @@ window.onload=players();
   box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 </style>
-<div class="social-icons" style="clear: both; text-align: center;">
+<div class="social-icons" style="position:absolute;bottom:10px;left: 50%;transform: translateX(-50%);clear: both; text-align: center;">
 <br /><br />
   <a
     href="https://www.youtube.com/c/NetSec"
