@@ -33,6 +33,7 @@ Code for a online short videos player .
 
 http://m.2kak.com/app/get.php
 
-（该链接暂时存在，后期可能删除）
+（该链接暂时存在，后期可能删除）该连接地址可以复制粘贴到后台管理配置
 
-该连接地址可以复制粘贴到后台管理配置
+
+Demo: https://xmm.itprosec.com
