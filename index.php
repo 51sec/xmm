@@ -43,8 +43,6 @@ $row[11]='wxid_45gjwp2wijrl22';
 	<script src="static/js/jquery.js"></script>
 	<script src="static/js/clipboard.min.js"></script>  
 
-
-
 <link rel="stylesheet" href="static/css/syystyle.css">
 <style type="text/css">
 .sstips{color: #fff;}
@@ -145,17 +143,14 @@ body {background:#000;}
   gtag('js', new Date());
   gtag('config', 'G-3NWLMBWBZS');
 </script>
-
 <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"> </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5660349373091698" crossorigin="anonymous"></script>
 <!-- Ezoic - sidebar_floating_1 - sidebar_floating_1 -->
 <div id="ezoic-pub-ad-placeholder-608"> </div>
 <!-- End Ezoic - sidebar_floating_1 - sidebar_floating_1 -->
-
 <!-- Ezoic - sidebar_middle - sidebar_middle -->
 <div id="ezoic-pub-ad-placeholder-143"> </div>
 <!-- End Ezoic - sidebar_middle - sidebar_middle -->
-
 <!-- Ezoic - bottom_of_page 129 - bottom_of_page -->
   <div id="ezoic-pub-ad-placeholder-129"> 
    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5660349373091698"
@@ -163,9 +158,6 @@ body {background:#000;}
    </script>  
   </div>
 <!-- End Ezoic - bottom_of_page 129 - bottom_of_page -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5660349373091698"
-     crossorigin="anonymous"></script>
 <!-- 91sec_sidebar_AdSense3_1x1_as -->
 <ins class="adsbygoogle"
      style="display:block"
@@ -176,9 +168,8 @@ body {background:#000;}
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
    
-  </head>
+</head>
 
 
 <body background-color:#fff>
@@ -463,8 +454,8 @@ window.onload=players();
 <style> .social-icons {
   display: flex;
   justify-content: center;
-  gap: 10px; /* space between icons */
-  margin: 20px 0;
+  gap: 7px; /* space between icons */
+  margin: 15px 0;
 }
 .social-icons img {
   height: 50px;
