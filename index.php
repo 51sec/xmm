@@ -58,8 +58,8 @@ body {background:#000;}
     top:0px; 
     bottom: 0px; 
     overflow: hidden;}
-#player{width: 100%;
-    height: 100%;
+#player{width: 90%;
+    height: 90%;
     object-fit: cover; 
     object-position: center center;
     z-index: 100;background:#000;  
@@ -177,18 +177,6 @@ body {background:#000;}
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5660349373091698"
-     crossorigin="anonymous"></script>
-<!-- xjj_top -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5660349373091698"
-     data-ad-slot="7912531145"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
    
   </head>
 
