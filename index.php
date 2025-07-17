@@ -76,8 +76,8 @@ body {background:#000;}
 .closeBtn_swt  img{max-width:100%}
 }
 @media screen and (max-width: 768px) {
-.app{
-    width: 90%; 
+.app{left:50%;transform: translateX(-50%)
+    width: 85%; 
     height:auto; 
     max-height: 85vh; 
     position: absolute; 
