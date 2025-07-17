@@ -54,10 +54,10 @@ body {background:#000;}
 .app {
   width: 100%;
   height: 100vh;
-  position: relative;
-  top: 0;
-  left: 0;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #player {
@@ -118,11 +118,6 @@ body {background:#000;}
   .app {
     width: 100%;
     height: 100vh;
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow: hidden;
   }
 
   #player {
