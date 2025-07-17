@@ -51,8 +51,9 @@ body {background:#000;}
 *{margin:0px; padding:0px;touch-action: pan-y;text-align: center;
 }
 @media screen and (min-width: 769px) {
-.app{left:35%;width: 30%;
-    height: 100%;
+.app{left:50%;transform: translateX(-50%);
+    width: 30%;
+    height: 100vh;
     position: absolute; 
     top:0px; 
     bottom: 0px; 
