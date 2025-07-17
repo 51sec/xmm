@@ -53,7 +53,8 @@ body {background:#000;}
 @media screen and (min-width: 769px) {
 .app{left:50%;transform: translateX(-50%);
     width: 30%;
-    height: 90vh;
+    height: 90%;
+    max-height: 90vh; 
     position: absolute; 
     top:0px; 
     bottom: 0px; 
@@ -76,9 +77,9 @@ body {background:#000;}
 }
 @media screen and (max-width: 768px) {
 .app{
-    width: 100%; 
+    width: 90%; 
     height:auto; 
-    max-height: 90vh; 
+    max-height: 85vh; 
     position: absolute; 
     top:0px; 
     right:0px; 
