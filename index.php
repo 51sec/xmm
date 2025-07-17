@@ -116,9 +116,9 @@ body {background:#000;}
 /* Desktop / larger screens */
 @media screen and (min-width: 769px) {
   .app {
-    width: 30%;
+    width: 100%;
     height: 100vh;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
