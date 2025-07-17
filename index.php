@@ -77,7 +77,7 @@ body {background:#000;}
 }
 @media screen and (max-width: 768px) {
 .app{left:50%;transform: translateX(-50%)
-    width: 85%; 
+    width: 100%; 
     height:auto; 
     max-height: 85vh; 
     position: absolute; 
