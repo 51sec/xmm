@@ -630,7 +630,7 @@ window.onload=players();
   box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 </style>
-<div class="social-icons" style="display: flex;justify-content: center; gap: 5px; margin-top: 5px; position: relative; ">
+<div class="social-icons" style="position:absolute;bottom:10px;left: 50%;transform: translateX(-50%);clear: both; text-align: center;">
 <br /><br />
   <a
     href="https://www.youtube.com/c/NetSec" target="_blank"
