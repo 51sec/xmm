@@ -451,11 +451,13 @@ window.onload=players();
     </div>
 
 
+
+
 <style> .social-icons {
   display: flex;
   justify-content: center;
-  gap: 7px; /* space between icons */
-  margin: 15px 0;
+  gap: clamp(5px, 3vw, 35px); /* min 3px, usually 2% of viewport width, max 20px; space between icons */
+  margin: 5px 0;
 }
 .social-icons img {
   height: 50px;
@@ -468,11 +470,10 @@ window.onload=players();
   box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 </style>
-<div class="social-icons" style="position:absolute;bottom:10px;left: 50%;transform: translateX(-50%);clear: both; text-align: center;">
+<div class="social-icons" style="display: flex;justify-content: center; gap: 5px; margin-top: 5px; position: relative; ">
 <br /><br />
   <a
-    href="https://www.youtube.com/c/NetSec"
-    style="margin-left: 1em; margin-right: 1em;"     target="_blank"
+    href="https://www.youtube.com/c/NetSec" target="_blank"
   >
     <img alt="51sec YouTube" 
       border="0"
@@ -484,8 +485,7 @@ window.onload=players();
     />
   </a>
   <a
-    href="https://sites.51sec.org"
-    style="margin-left: 1em; margin-right: 1em;"     target="_blank"
+    href="https://sites.51sec.org" target="_blank"
   >
     <img alt="51sec Sites" 
       border="0"
@@ -496,7 +496,7 @@ window.onload=players();
       width="50"
     />
   </a>
-  <a href="https://nav.51sec.org" style="margin-left: 1em; margin-right: 1em;">
+  <a href="https://nav.51sec.org"  target="_blank">
     <img alt="51sec Navigation" 
       border="0"
       data-original-width="500"
@@ -506,7 +506,7 @@ window.onload=players();
     />
   </a>
   <a
-    href="https://od.51sec.org"     style="margin-left: 1em; margin-right: 1em;"     target="_blank"  >
+    href="https://od.51sec.org"  target="_blank"  >
     <img alt="51sec OneDrive" 
       border="0"
       data-original-height="500"
@@ -516,8 +516,7 @@ window.onload=players();
     />
   </a>
   <a
-    href="http://xjj.51sec.org"
-    style="margin-left: 1em; margin-right: 1em;"     target="_blank"
+    href="http://xjj.itprosec.com" target="_blank"
   >
     <img alt="XJJ" 
       border="0"
@@ -529,10 +528,9 @@ window.onload=players();
     />
   </a>
   <a
-    href="http://xmm.itprosec.com"
-    style="margin-left: 1em; margin-right: 1em;"     target="_blank"
+    href="http://xmm.itprosec.com" target="_blank"
   >
-    <img alt="XMM" 
+    <img alt="xmm" 
       border="0"
       data-original-height="500"
       data-original-width="500"
@@ -543,11 +541,7 @@ window.onload=players();
   </a>
 </div>
 
-  
-<style>#haaa{position:fixed !important;position:absolute;top:3px;top:expression((t=document.documentElement.scrollTop?document.documentElement.scrollTop:document.body.scrollTop)+"px");left:2px;width:101%;height:103%;background-color:#fff;opacity:.95;filter:alpha(opacity=95);display:block;padding:20% 0;z-index: 9999;}#haaa *{text-align:center;margin:0 auto;display:block;filter:none;font:bold 14px Verdana,Arial,sans-serif;text-decoration:none}#haaa ~ *{display:none}</style><div id="haaa"><font>Please enable / Bitte aktiviere JavaScript!<br>Veuillez activer / Por favor activa el Javascript!<a href="http://sites.51sec.org">[ ? ]</a></font></div><script>window.document.getElementById("haaa").parentNode.removeChild(window.document.getElementById("haaa"));(function(l,m){function n(a){a&&haaa.nextFunction()}var h=l.document,p=["i","s","u"];n.prototype={rand:function(a){return Math.floor(Math.random()*a)},getElementBy:function(a,b){return a?h.getElementById(a):h.getElementsByTagName(b)},getStyle:function(a){var b=h.defaultView;return b&&b.getComputedStyle?b.getComputedStyle(a,null):a.currentStyle},deferExecution:function(a){setTimeout(a,2E3)},insert:function(a,b){var c=h.createElement("font"),e=h.body,d=e.childNodes.length,g=e.style,f=0,k=0;if("haaa"==b){c.setAttribute("id",b);g.margin=g.padding=0;g.height="100%";for(d=this.rand(d);f<d;f++)1==e.childNodes[f].nodeType&&(k=Math.max(k,parseFloat(this.getStyle(e.childNodes[f]).zIndex)||0));k&&(c.style.zIndex=k+1);d++}c.innerHTML=a;e.insertBefore(c,e.childNodes[d-1])},r:function(a){var b=h.body.style;this.getElementBy(a).parentNode.removeChild(this.getElementBy(a));b.height=b.margin=b.padding=""},displayMessage:function(a){a="abisuq".charAt(this.rand(5));var b,c='<input type="button" onclick="haaa.r(\'haaa\')" value=20 disabled></'+a+">";this.insert("<"+a+'>Please disable your ad blocker!<br> <br>Visit blog.51sec.org, www.51sec.org for more! <br>Bitte deaktiviere Deinen Werbeblocker!<br>Veuillez désactiver votre bloqueur de publicité!<br>Por favor, desactive el bloqueador de anuncios! <a href="http://sites.51sec.org">[ ? ]</a>'+c,"haaa");c=this.getElementBy("haaa").firstChild.lastChild;b=setInterval(function(){c.value--;1>c.value&&(clearInterval(b),c.value="Close",c.disabled="")},1E3)},i:function(){for(var a="adSky,adunitl,div-ad-1x1,marquee_ad,right_ad_2,slider_ad,visual-ad,ad,ads,adsense".split(","),b=a.length,c="",e=this,d=0,g="abisuq".charAt(e.rand(5));d<b;d++)e.getElementBy(a[d])||(c+="<"+g+' id="'+a[d]+'"></'+g+">");e.insert(c);e.deferExecution(function(){for(d=0;d<b;d++)if(null==e.getElementBy(a[d]).offsetParent||"none"==e.getStyle(e.getElementBy(a[d])).display)return e.displayMessage("#"+a[d]+"("+d+")");e.nextFunction()})},s:function(){var a={'pagead2.googlesyndic':'google_ad_client','js.adscale.de/getads':'adscale_slot_id','get.mirando.de/miran':'adPlaceId'},b=this,c=b.getElementBy(0,"script"),e=c.length-1,d,g,f,k;h.write=null;for(h.writeln=null;0<=e;--e)if(d=c[e].src.substr(7,20),a[d]!==m){f=h.createElement("script");f.type="text/javascript";f.src=c[e].src;g=a[d];l[g]=m;f.onload=f.onreadystatechange=function(){k=this;l[g]!==m||k.readyState&&"loaded"!==k.readyState&&"complete"!==k.readyState||(l[g]=f.onload=f.onreadystatechange=null,c[0].parentNode.removeChild(f))};c[0].parentNode.insertBefore(f,c[0]);b.deferExecution(function(){if(l[g]===m)return b.displayMessage(f.src);b.nextFunction()});return}b.nextFunction()},u:function(){var a=".480x60-,.480x60/,/120_600_,/468-60.,/468x72_,/486x60_,/780x90.,_300x250-,_468-60_,_728x60.".split(","),b=this,c=b.getElementBy(0,"img"),e,d;c[0]!==m&&c[0].src!==m&&(e=new Image,e.onload=function(){d=this;d.onload=null;d.onerror=function(){p=null;b.displayMessage(d.src)};d.src=c[0].src+"#"+a.join("")},e.src=c[0].src);b.deferExecution(function(){b.nextFunction()})},nextFunction:function(){var a=p[0];a!==m&&(p.shift(),this[a]())}};l.haaa=haaa=new n;h.addEventListener?l.addEventListener("load",n,!1):l.attachEvent("onload",n)})(window);</script>
-
-
-
+	
 <script async src="https://fundingchoicesmessages.google.com/i/pub-5660349373091698?ers=1" nonce="71EKVshklXofUN3O1mph_A"></script><script nonce="71EKVshklXofUN3O1mph_A">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
 
 <script>(function(){'use strict';function aa(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}var ba=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};
@@ -558,11 +552,7 @@ function t(a,b){a.prototype=ha(b.prototype);a.prototype.constructor=a;if(la)la(a
 l("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(c<0&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});
 l("String.prototype.includes",function(a){return a?a:function(b,c){if(this==null)throw new TypeError("The 'this' value for String.prototype.includes must not be null or undefined");if(b instanceof RegExp)throw new TypeError("First argument to String.prototype.includes must not be a regular expression");return this.indexOf(b,c||0)!==-1}});l("Number.MAX_SAFE_INTEGER",function(){return 9007199254740991});
 l("Number.isFinite",function(a){return a?a:function(b){return typeof b!=="number"?!1:!isNaN(b)&&b!==Infinity&&b!==-Infinity}});l("Number.isInteger",function(a){return a?a:function(b){return Number.isFinite(b)?b===Math.floor(b):!1}});l("Number.isSafeInteger",function(a){return a?a:function(b){return Number.isInteger(b)&&Math.abs(b)<=Number.MAX_SAFE_INTEGER}});
-l("Math.trunc",function(a){return a?a:function(b){b=Number(b);if(isNaN(b)||b===Infinity||b===-Infinity||b===0)return b;var c=Math.floor(Math.abs(b));return b<0?-c:c}});/*
-
- Copyright The Closure Library Authors.
- SPDX-License-Identifier: Apache-2.0
-*/
+l("Math.trunc",function(a){return a?a:function(b){b=Number(b);if(isNaN(b)||b===Infinity||b===-Infinity||b===0)return b;var c=Math.floor(Math.abs(b));return b<0?-c:c}});
 var u=this||self;function v(a,b){a:{var c=["CLOSURE_FLAGS"];for(var d=u,e=0;e<c.length;e++)if(d=d[c[e]],d==null){c=null;break a}c=d}a=c&&c[a];return a!=null?a:b}function w(a){return a};function na(a){u.setTimeout(function(){throw a;},0)};var oa=v(610401301,!1),pa=v(188588736,!0),qa=v(645172343,v(1,!0));var x,ra=u.navigator;x=ra?ra.userAgentData||null:null;function z(a){return oa?x?x.brands.some(function(b){return(b=b.brand)&&b.indexOf(a)!=-1}):!1:!1}function A(a){var b;a:{if(b=u.navigator)if(b=b.userAgent)break a;b=""}return b.indexOf(a)!=-1};function B(){return oa?!!x&&x.brands.length>0:!1}function C(){return B()?z("Chromium"):(A("Chrome")||A("CriOS"))&&!(B()?0:A("Edge"))||A("Silk")};var sa=B()?!1:A("Trident")||A("MSIE");!A("Android")||C();C();A("Safari")&&(C()||(B()?0:A("Coast"))||(B()?0:A("Opera"))||(B()?0:A("Edge"))||(B()?z("Microsoft Edge"):A("Edg/"))||B()&&z("Opera"));var ta={},D=null;var ua=typeof Uint8Array!=="undefined",va=!sa&&typeof btoa==="function";var wa;function E(){return typeof BigInt==="function"};var F=typeof Symbol==="function"&&typeof Symbol()==="symbol";function xa(a){return typeof Symbol==="function"&&typeof Symbol()==="symbol"?Symbol():a}var G=xa(),ya=xa("2ex");var za=F?function(a,b){a[G]|=b}:function(a,b){a.g!==void 0?a.g|=b:Object.defineProperties(a,{g:{value:b,configurable:!0,writable:!0,enumerable:!1}})},H=F?function(a){return a[G]|0}:function(a){return a.g|0},I=F?function(a){return a[G]}:function(a){return a.g},J=F?function(a,b){a[G]=b}:function(a,b){a.g!==void 0?a.g=b:Object.defineProperties(a,{g:{value:b,configurable:!0,writable:!0,enumerable:!1}})};function Aa(a,b){J(b,(a|0)&-14591)}function Ba(a,b){J(b,(a|34)&-14557)};var K={},Ca={};function Da(a){return!(!a||typeof a!=="object"||a.g!==Ca)}function Ea(a){return a!==null&&typeof a==="object"&&!Array.isArray(a)&&a.constructor===Object}function L(a,b,c){if(!Array.isArray(a)||a.length)return!1;var d=H(a);if(d&1)return!0;if(!(b&&(Array.isArray(b)?b.includes(c):b.has(c))))return!1;J(a,d|1);return!0};var M=0,N=0;function Fa(a){var b=a>>>0;M=b;N=(a-b)/4294967296>>>0}function Ga(a){if(a<0){Fa(-a);var b=n(Ha(M,N));a=b.next().value;b=b.next().value;M=a>>>0;N=b>>>0}else Fa(a)}function Ia(a,b){b>>>=0;a>>>=0;if(b<=2097151)var c=""+(4294967296*b+a);else E()?c=""+(BigInt(b)<<BigInt(32)|BigInt(a)):(c=(a>>>24|b<<8)&16777215,b=b>>16&65535,a=(a&16777215)+c*6777216+b*6710656,c+=b*8147497,b*=2,a>=1E7&&(c+=a/1E7>>>0,a%=1E7),c>=1E7&&(b+=c/1E7>>>0,c%=1E7),c=b+Ja(c)+Ja(a));return c}
 function Ja(a){a=String(a);return"0000000".slice(a.length)+a}function Ha(a,b){b=~b;a?a=~a+1:b+=1;return[a,b]};var Ka=/^-?([1-9][0-9]*|0)(\.[0-9]+)?$/;var O;function La(a,b){O=b;a=new a(b);O=void 0;return a}
 function P(a,b,c){a==null&&(a=O);O=void 0;if(a==null){var d=96;c?(a=[c],d|=512):a=[];b&&(d=d&-16760833|(b&1023)<<14)}else{if(!Array.isArray(a))throw Error("narr");d=H(a);if(d&2048)throw Error("farr");if(d&64)return a;d|=64;if(c&&(d|=512,c!==a[0]))throw Error("mid");a:{c=a;var e=c.length;if(e){var f=e-1;if(Ea(c[f])){d|=256;b=f-(+!!(d&512)-1);if(b>=1024)throw Error("pvtlmt");d=d&-16760833|(b&1023)<<14;break a}}if(b){b=Math.max(b,e-(+!!(d&512)-1));if(b>1024)throw Error("spvt");d=d&-16760833|(b&1023)<<
@@ -590,6 +580,91 @@ function Eb(a){Fb(a);mb(a.o,a.u,3,!1,function(){a:{var b=a.j;var c=u.btoa(b);if(
 
 window.__h82AlnkH6D91__("WyJwdWItNTY2MDM0OTM3MzA5MTY5OCIsW251bGwsbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9iL3B1Yi01NjYwMzQ5MzczMDkxNjk4Il0sbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9lbC9BR1NLV3hYZmV4akhoTmVaVXNJR2IyZWxRd0NEWk9mSVJNV1E2c2E5ZDhjd1lxZFBvYmlMYW5sUXpNSkxtVzdKUDJ4RkNPcHgyeUY1WmRGQjBGMlRZSHgtVm1hdkRRXHUwMDNkXHUwMDNkP3RlXHUwMDNkVE9LRU5fRVhQT1NFRCIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFdaaGxUcGg3QVVVQlhuR0g3bm41aHNBQU0tT2xwczdTc0k2OGYyZFpWTFc1SG5ySmtPcVdLNGliZUdITWpWTlF4QXB1dHZYZmhubnQtQkVmRG5sSm4xYVFcdTAwM2RcdTAwM2Q/YWJcdTAwM2QxXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFVoZ2NkM0hYZkp0RFRsWE83UnEwYU5oc08ybW9DRjA2b2ttOHNrX2kzQS1HWENFWUpWSGpURDF5Zl9CYTN5M3R5NERKUWdqV0JvMVo2QjR4czJOYU5DYUFcdTAwM2RcdTAwM2Q/YWJcdTAwM2QyXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFhJMDZwQ29zODlqUWZ0bUJSbzVKc2FmcC1HcWlFN0tlamtFTTdpQ1ZUVWNTRDE0OG11RDRMSkJNVXFqVnNaOENUbWNlM04tbHQzUnN1N0NyLXpZM3B5VkFcdTAwM2RcdTAwM2Q/c2JmXHUwMDNkMiIsImRpdi1ncHQtYWQiLDIwLDEwMCwiY0hWaUxUVTJOakF6TkRrek56TXdPVEUyT1RnXHUwMDNkIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vd3d3LmdzdGF0aWMuY29tLzBlbW4vZi9wL3B1Yi01NjYwMzQ5MzczMDkxNjk4LmpzP3VzcXBcdTAwM2RDQVEiXSwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vZWwvQUdTS1d4VW8xNFFzVXowNVdxRDkxMndfM21PRm50ZGF0dVI3d1VWVDYtRUhEaEF5VlRfRnJwcFhBYVZiU0ZYdWl0d0VLS003WktfNExlYlNlT0x2cnpFTV9DbWh4d1x1MDAzZFx1MDAzZCJd");</script>
 
-	  
+
+<style>
+#adblock-overlay {
+  display: none;
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255,255,255,0.95);
+  z-index: 9999;
+  text-align: center;
+  padding-top: 20%;
+  box-sizing: border-box;
+  font: bold 16px Verdana,Arial,sans-serif;
+}
+#adblock-overlay a {
+  color: red;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+#adblock-overlay button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+</style>
+
+<div id="adblock-overlay">
+  Please disable your ad blocker to support us!<br>
+  <small>Visit blog.51sec.org, www.51sec.org for more.</small><br>
+  <a href="https://sites.51sec.org" target="_blank">[ ? ]</a><br>
+  <button id="adblock-close-btn" disabled>20</button>
+</div>
+
+<script>
+(function(){
+  async function detectAdBlock() {
+    return new Promise(resolve=>{
+      const bait = document.createElement('div');
+      bait.className = 'ads ad-banner adunit';
+      bait.style.height='1px'; bait.style.position='absolute';
+      document.body.appendChild(bait);
+      setTimeout(()=>{
+        const blocked = getComputedStyle(bait).display=='none' || bait.offsetParent===null;
+        document.body.removeChild(bait);
+        resolve(blocked);
+      }, 100);
+    });
+  }
+
+  async function checkAndShowOverlay(){
+    const isBlocked = await detectAdBlock();
+    if(isBlocked){
+      showOverlay();
+    }
+  }
+
+  function showOverlay(){
+    const overlay = document.getElementById('adblock-overlay');
+    overlay.style.display='block';
+
+    const btn = document.getElementById('adblock-close-btn');
+    let countdown = 20;
+    btn.disabled = true;
+    btn.textContent = countdown;
+
+    const timer = setInterval(()=>{
+      countdown--;
+      btn.textContent = countdown;
+      if(countdown<=0){
+        clearInterval(timer);
+        btn.textContent = 'Close';
+        btn.disabled = false;
+      }
+    },1000);
+
+    btn.onclick = ()=>{
+      overlay.style.display='none';
+    }
+  }
+  // Run once at start
+  checkAndShowOverlay();
+  // Repeat every minute
+  setInterval(checkAndShowOverlay, 60000);
+})();
+</script>	
+
 </body>
 </html>
