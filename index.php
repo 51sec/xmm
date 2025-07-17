@@ -44,236 +44,82 @@ $row[11]='wxid_45gjwp2wijrl22';
 	<script src="static/js/clipboard.min.js"></script>  
 
 <link rel="stylesheet" href="static/css/syystyle.css">
+
 <style type="text/css">
 .sstips{color: #fff;}
 body {background:#000;}
 *{margin:0px; padding:0px;touch-action: pan-y;text-align: center;
 }
-
-/* Default: mobile first */
-.app {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#player {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  z-index: 100;
-}
-
-/* Overlay etc.: same as your original, cleaned spacing */
-.relative { position: relative; }
-.absolute { position: absolute; }
-
-.swtCenter {
-  width: 88%;
-  min-height: 400px;
-  background-size: 100% 100%;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  margin-left: -44%;
-  margin-top: -200px;
-  z-index: 99999;
-  display: none;
-}
-
-.swt_lists {
-  top: 15px;
-  left: 0;
-  width: 96%;
-  padding-left: 3%;
-  height: 45px;
-  line-height: 45px;
-}
-
-.swt_lists img { width: 100%; }
-
-.submit-btn {
-  background: #E74C3C !important;
-  color: #fff;
-  padding: 0 !important;
-}
-
-.closeBtn_swt {
-  right: -28px;
-  top: -8px;
-  width: 66px;
-  height: 66px;
-  z-index: 99999;
-  cursor: pointer;
-}
-
-.closeBtn_swt img { max-width: 100%; }
-
-/* Desktop / larger screens */
 @media screen and (min-width: 769px) {
-  .app {
-    width: 100%;
-    height: 100vh;
-  }
+.app{left:35%;width: 30%;
+    height: 100%;
+    position: absolute; 
+    top:0px; 
+    bottom: 0px; 
+    overflow: hidden;}
+#player{width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center center;
+    z-index: 100;background:#000;  
+}
+.relative { position: relative; }
+	.absolute { position: absolute; }
+	.swtCenter { width: 28%; min-height: 300px; background-size:100% 100%; position: fixed; left: 50%; top: 45%; margin-left: -14%; margin-top: -180px;  z-index: 99999; display: none; }
+	.swt_lists {left: 0; width: 96%; padding-left: 3%; height: 45px; line-height: 45px;}
 
-  #player {
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
+	.swt_lists img{width: 100%;}
+	.submit-btn{ background:#E74C3C!important; color: #fff; padding:0!important }
+	.closeBtn_swt {right: -28px; top: -8px; width: 66px; height: 66px; z-index: 99999; cursor: pointer;}
+.closeBtn_swt  img{max-width:100%}
+}
+@media screen and (max-width: 768px) {
+.app{
+    width: 100%; 
+    height:100%; 
+    position: absolute; 
+    top:0px; 
+    right:0px; 
+    bottom: 0px; 
+    left:0px; 
+    overflow: hidden;
+}
+#player{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
     object-position: center center;
     z-index: 100;
-    background: #000;
-  }
+}
+.relative { position: relative; }
+.absolute { position: absolute; }
+.swtCenter { width: 88%; min-height: 400px; background-size:100% 100%; position: fixed; left: 50%; top: 50%; margin-left: -44%; margin-top: -180px; z-index: 99999; display: none; }
+.swt_lists { top: 15px; left: 0; width: 96%; padding-left: 3%; height: 45px; line-height: 45px;}
 
-  .swtCenter {
-    width: 28%;
-    min-height: 300px;
-    background-size: 100% 100%;
-    position: fixed;
-    left: 50%;
-    top: 45%;
-    margin-left: -14%;
-    margin-top: -180px;
-    z-index: 99999;
-    display: none;
-  }
+.swt_lists img{width: 100%;}
+.submit-btn{ background:#E74C3C!important; color: #fff; padding:0!important }
+.closeBtn_swt {right: -28px; top: -8px; width: 66px; height: 66px; z-index: 99999; cursor: pointer;}
+.closeBtn_swt  img{max-width:100%}}
 
-  .swt_lists {
-    left: 0;
-    width: 96%;
-    padding-left: 3%;
-    height: 45px;
-    line-height: 45px;
-  }
-
-  .swt_lists img { width: 100%; }
-
-  .submit-btn {
-    background: #E74C3C !important;
-    color: #fff;
-    padding: 0 !important;
-  }
-
-  .closeBtn_swt {
-    right: -28px;
-    top: -8px;
-    width: 66px;
-    height: 66px;
-    z-index: 99999;
-    cursor: pointer;
-  }
-
-  .closeBtn_swt img { max-width: 100%; }
-}
-
-/* Other parts: keep as-is if you want */
-.content { width: 80%; margin: 200px auto; }
-.hide_box {
-  z-index: 999;
-  background: #666;
-  opacity: 0.5;
-  left: 0;
-  top: 0;
-  height: 99%;
-  width: 100%;
-  position: fixed;
-  display: none;
-}
-.shang_box {
-  width: 300px;
-  height: 450px;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 10px;
-  position: fixed;
-  z-index: 1000;
-  left: 50%;
-  top: 50%;
-  margin-left: -150px;
-  margin-top: -280px;
-  border: 1px dotted #dedede;
-  display: none;
-}
-.shang_box img { border: none; }
-.dashang {
-  display: block;
-  width: 100px;
-  margin: 5px auto;
-  height: 25px;
-  line-height: 25px;
-  padding: 10px;
-  background-color: #E74851;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 16px;
-  transition: all 0.3s;
-}
-.dashang:hover { opacity: 0.8; padding: 15px; font-size: 18px; }
-.shang_close { float: right; display: inline-block; }
-.shang_logo { display: block; text-align: center; margin: 20px auto; }
-.shang_tit {
-  width: 100%;
-  height: 75px;
-  text-align: center;
-  line-height: 66px;
-  color: #a3a3a3;
-  font-size: 16px;
-  background: url('static/images/cy-reward-title-bg.jpg');
-  font-family: 'Microsoft YaHei';
-  margin-top: 7px;
-  margin-right: 2px;
-}
-.shang_tit p { color: #a3a3a3; text-align: center; font-size: 16px; }
-.shang_payimg {
-  width: 140px;
-  padding: 10px;
-  border: 6px solid #EA5F00;
-  margin: 0 auto;
-  border-radius: 3px;
-  height: 140px;
-}
-.shang_payimg img {
-  display: block;
-  width: 140px;
-  height: 140px;
-}
-.pay_explain { text-align: center; margin: 10px auto; font-size: 12px; color: #545454; }
-.radiobox {
-  width: 16px;
-  height: 16px;
-  background: url('static/images/radio2.jpg');
-  display: block;
-  float: left;
-  margin-top: 5px;
-  margin-right: 14px;
-}
-.checked .radiobox { background: url('static/images/radio1.jpg'); }
-.shang_payselect {
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 40px;
-  cursor: pointer;
-  height: 60px;
-  width: 280px;
-}
-.shang_payselect .pay_item { display: inline-block; margin-right: 10px; float: left; }
-.shang_info { clear: both; }
-.shang_info p, .shang_info a {
-  color: #C3C3C3;
-  text-align: center;
-  font-size: 12px;
-  text-decoration: none;
-  line-height: 2em;
-}
-
-	
+.content{width:80%;margin:200px auto;}
+	.hide_box{z-index:999;filter:alpha(opacity=50);background:#666;opacity: 0.5;-moz-opacity: 0.5;left:0;top:0;height:99%;width:100%;position:fixed;display:none;}
+	.shang_box{width:300px;height:450px;padding:10px;background-color:#fff;border-radius:10px;position:fixed;z-index:1000;left:50%;top:50%;margin-left:-150px;margin-top:-280px;border:1px dotted #dedede;display:none;}
+	.shang_box img{border:none;border-width:0;}
+	.dashang{display:block;width:100px;margin:5px auto;height:25px;line-height:25px;padding:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;}
+	.dashang:hover{opacity:0.8;padding:15px;font-size:18px;}
+	.shang_close{float:right;display:inline-block;}
+	.shang_logo{display:block;text-align:center;margin:20px auto;}
+	.shang_tit{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;background: url('static/images/cy-reward-title-bg.jpg');font-family: 'Microsoft YaHei';margin-top: 7px;margin-right:2px;}
+	.shang_tit p{color:#a3a3a3;text-align:center;font-size:16px;}
+	.shang_payimg{width:140px;padding:10px;border:6px solid #EA5F00;margin:0 auto;border-radius:3px;height:140px;}
+	.shang_payimg img{display:block;text-align:center;width:140px;height:140px; }
+	.pay_explain{text-align:center;margin:10px auto;font-size:12px;color:#545454;}
+	.radiobox{width: 16px;height: 16px;background: url('static/images/radio2.jpg');display: block;float: left;margin-top: 5px;margin-right: 14px;}
+	.checked .radiobox{background:url('static/images/radio1.jpg');}
+	.shang_payselect{text-align:center;margin:0 auto;margin-top:40px;cursor:pointer;height:60px;width:280px;}
+	.shang_payselect .pay_item{display:inline-block;margin-right:10px;float:left;}
+	.shang_info{clear:both;}
+	.shang_info p,.shang_info a{color:#C3C3C3;text-align:center;font-size:12px;text-decoration:none;line-height:2em;}
 #radius {border: 2px solid #fff;width: 50px;height: 50px;border-radius:70%;}
 .ssleex {border: 1px solid #fff;background-color: rgba(255,255,255,0.6);border-radius:7px;color:#333;box-shadow: 0px 3px 6px rgba(255,255,255, .5);}
 .xslekeex{color:#fff;margin:0px 2px;}
